@@ -1,0 +1,718 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1c2230;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.page1 {
+    height: fit-content;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px 0 80px;
+}
+
+img {
+    width: 160px;
+
+}
+
+.navlist li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.curv2 {
+    display: none;
+}
+
+.navlist li a {
+    color: white;
+    transition: all .5s;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+.navlist li::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+    transition: all .5s;
+}
+
+.navlist li:hover:after {
+    width: 100%;
+
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.photo img {
+    width: 750px;
+
+}
+
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 37px;
+    padding-top: 30px;
+    line-height: 60px;
+}
+
+.content p {
+    text-align: center;
+    padding-top: 35px;
+    font-size: 17px;
+}
+
+button {
+    width: 230px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0 auto;
+    border-radius: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8cdae4;
+}
+
+button a {
+    transition: all .5s;
+    text-decoration: none;
+    color: #181f2b;
+}
+
+button:hover a {
+    color: #fff;
+}
+
+.gridd {
+    display: grid;
+    grid-template:
+        repeat(2, 300px) /repeat(2, 400px);
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    gap: 150px;
+}
+
+h4 {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.con p {
+    padding-top: 20px;
+}
+
+.con4 h4 {
+    margin-top: 15px;
+}
+
+.con2 img {
+    width: 110px;
+}
+
+.main .curv {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 750px;
+    right: 0px;
+    z-index: -2;
+}
+
+.page2 {
+    background-color: #181f2b;
+}
+
+.imgcontent {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.logpic img {
+    width: 800px;
+    padding-left: 100px;
+}
+
+.logtext {
+    width: 100%;
+    padding: 110px 0 50px 80px;
+}
+
+.logtext h1 {
+    font-size: 50px;
+    padding: 0px 0 30px 0px;
+
+}
+
+
+.logtext p {
+    font-size: 20px;
+}
+
+.logtext a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 80px;
+
+}
+
+.logtext img {
+    width: 20px;
+    position: relative;
+    left: 190px;
+    top: -24px;
+
+}
+
+.link::after {
+    content: '';
+    display: block;
+    position: relative;
+    left: -370px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+    transition: all .5s;
+
+}
+
+.link:hover::after {
+    width: 20%;
+}
+
+.quotes {
+    z-index: 1;
+    position: relative;
+    top: 170px;
+    left: 180px;
+    width: 75px;
+}
+
+.reviews {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment_box {
+    position: relative;
+    z-index: 2;
+    width: 430px;
+    height: fit-content;
+    background-color: #21293c;
+    margin-left: 50px;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.reviewpic {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 15px;
+
+}
+
+.reviewpic,
+.comm {
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+span {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.reviewpic img {
+
+    width: 40px;
+
+}
+
+.email_box {
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 830px;
+    height: 300px;
+    background-color: #1c2230;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.email_box h1 {
+    font-family: 'Raleway', sans-serif;
+    padding: 25px 0 30px 0;
+}
+
+.ediv {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px
+}
+
+input {
+    margin-top: 20px;
+    width: 480px;
+    height: 50px;
+    padding: 19px;
+    font-size: 18px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 40px;
+    border: none;
+}
+
+.bot {
+    width: 230px;
+    height: 50px;
+    border: none;
+    display: block;
+    margin: 20px 0 0 0;
+    border-radius: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all .5s;
+}
+
+.bot:hover {
+    color: #fff;
+}
+
+footer {
+    height: 400px;
+    width: 100%;
+    background-color: #0c1524;
+}
+
+footer .logoo {
+    position: relative;
+    left: 45px;
+    top: 120px;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.lasticon {
+    width: 20px;
+    float: left;
+}
+
+.icon3 {
+    width: 25px;
+    margin-top: 2px
+}
+
+.last_page {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+
+}
+
+.last_page p {
+    margin-left: 60px;
+}
+
+.last {
+    width: 375px;
+}
+
+.link_list1 {
+    float: left;
+    margin-right: 100px;
+}
+
+.links li {
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social {
+    text-align: center;
+}
+
+.social a {
+    color: #fff;
+    width: 400px;
+    padding: 20px;
+    font-size: 22px;
+}
+
+@media (max-width:700px) {
+    .imgcontent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        font-size: 11px;
+    }
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px 0 20px;
+    }
+
+    nav img {
+        width: 60px;
+
+    }
+
+    .navlist li a {
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .navlist li {
+        padding-right: 15px;
+    }
+
+
+
+    .photo img {
+        width: 70vw;
+
+    }
+
+    .content h1 {
+
+        font-size: 25px;
+        padding-top: 30px;
+        line-height: 35px;
+    }
+
+    .content p {
+        text-align: center;
+        padding-top: 35px;
+        font-size: 12px;
+    }
+
+    div.main {}
+
+    body,
+    .main {
+        height: fit-content;
+    }
+
+
+    .main .curv {
+        display: none;
+    }
+
+    .curv2 {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        bottom: 100px;
+        margin: auto;
+        z-index: -2;
+    }
+
+    .con1 img,
+    .con3 img,
+    .con4 img {
+        width: 70px;
+    }
+
+    .con1 {
+        padding-top: 100px;
+    }
+
+    .con2 img {
+        width: 50px;
+    }
+
+    h1 br {
+        display: none;
+    }
+
+    h1 {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    .con p {
+        padding-top: 10px;
+    }
+
+    .content {
+        height: fit-content;
+    }
+
+    .pagez {
+        background: #181f2b;
+    }
+
+    .gridd {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        gap: 50px;
+    }
+
+    .logpic img {
+        width: 75vw;
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .logpic {
+        margin: auto;
+    }
+
+    .logtext h1 {
+        font-size: 19px;
+    }
+
+    .logtext p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .br1 {
+        display: none;
+    }
+
+    .br2 {
+        display: none;
+    }
+
+    .logtext a {
+        font-size: 14px;
+        margin: 80px 10px 0 10px;
+
+    }
+
+    .logtext img {
+        width: 18px;
+        position: relative;
+        left: 142px;
+        top: -20px;
+
+    }
+
+    .link::after {
+        left: -105px;
+        width: 40%;
+    }
+
+    .link:hover::after {
+        width: 40%;
+    }
+
+    .reviewpic,
+    .comm {
+        margin-top: 20px;
+
+    }
+
+    span {
+        display: block;
+    }
+
+    .quotes {
+        top: 168px;
+        left: 30px;
+        width: 30px;
+    }
+
+    .email_box {
+        position: relative;
+        top: 100px;
+        margin: auto;
+        width: 80vw;
+        height: 330px;
+        background-color: #1c2230;
+        text-align: center;
+        padding: 0px;
+        border-radius: 10px;
+    }
+
+    .email_box br {
+        display: none;
+    }
+
+    .ediv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px
+    }
+
+    .email_box p {
+        padding: 0 20px;
+    }
+
+    input {
+        width: 270px;
+    }
+
+    .bot {
+        width: 270px;
+        margin: 20px 0;
+
+    }
+
+
+
+
+    .reviews {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .last_page {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 150px;
+
+    }
+
+    .comment_box {
+        position: relative;
+        z-index: 2;
+        width: 80vw;
+        height: fit-content;
+        background-color: #21293c;
+        border-radius: 5px;
+        font-size: 14px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+
+    .reviewpic {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin-right: 15px;
+
+    }
+
+    .comment_box br {
+        display: none;
+    }
+
+
+    .logtext {
+        width: 100vw;
+        padding: 110px 0 0px 0px;
+    }
+
+    footer {
+        height: fit-content;
+        width: 100vw;
+        background-color: #0c1524;
+    }
+
+    .address {
+        padding-bottom: 20px;
+    }
+
+    .link_list1 {
+        float: none;
+        margin-right: 100px;
+        padding: 30px 0;
+    }
+
+    .links li {
+        list-style-type: none;
+        line-height: 30px;
+    }
+
+    .last_page {
+        padding-left: 45px;
+    }
+
+
+
+    .social {
+        text-align: center;
+        margin: 60px 0 30px 0;
+    }
+
+    .social a {
+        color: #fff;
+        width: 400px;
+        padding: 20px 20px 0 20px;
+        font-size: 22px;
+    }
+
+    .social a .fa-instagram {
+
+        padding-right: 90px;
+
+    }
+
+}
